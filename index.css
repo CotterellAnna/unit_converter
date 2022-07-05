@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../Inter-Bold_700.e2cf90a4.woff);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter",sans-serif;
+}
+
+#container{
+    width: 550px;
+    height: fit-content;
+    background: #1F2937;
+}
+
+#input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 550px;
+    height: 35vh;
+    color: #FFFFFF;
+    background:#6943FF;
+}
+
+#input-container h1{
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+#input-box{
+    width: 100px;
+    height: 55px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    font-size: 58px;
+    text-align: center;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#convert-btn{
+    width: 100px;
+    height: 42px;
+    background: #FFFFFF;
+    color: #3D3D3D;
+    font-size: 16px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    border: none;
+}
+
+#output-container{
+    padding: 36px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.card{
+    color: #CCC1FF;
+    background: #273549;
+    border-radius: 4.68077px 0px 0px 0px;
+    height: 15vh;
+    width: 100%;
+    text-align: center;
+}
+
+.card .output{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+@media only screen and (max-width:600px){
+    #container{
+        height: 100vh;
+    }
+    #input-container{
+        width: auto;
+    }
+    #output-container{
+        padding: 0px 20px;
+        height: 65vh;
+        justify-content: space-around;
+    }
+}
